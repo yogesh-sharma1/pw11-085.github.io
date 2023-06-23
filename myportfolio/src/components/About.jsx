@@ -15,7 +15,7 @@ const About = () => {
         <p className="text-gray-400 my-3 text-lg">My introduction</p>
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="p-2">
-            <div className="text-gray-300 my-3">
+            <div id="user-detail-intro" className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
                 eos, quam vel quisquam, explicabo sit labore dignissimos optio

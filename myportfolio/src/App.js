@@ -8,6 +8,7 @@ import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Bot from "./components/Bot";
+import Githubstats from "./components/Githubstats";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Skills />
       <Hireme />
       <Projects />
+      <Githubstats />
       <Contact />
       <Footer />
     </div>
