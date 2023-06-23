@@ -19,17 +19,19 @@ const selectLastHalfYear = contributions => {
   };
 const Githubstats = () => {
   return (
-    <div className='react-activity-calendar'>
-        <GitHubCalendar
-            username={"pw11-085"}
-            transformData={selectLastHalfYear}
-            hideColorLegend
-            hideTotalCount
-            fontSize={16}
-          />
-          <div  id="github-streak-stats"></div>
-          <div  id="github-top-langs"></div>
-          <div  id="github-stats-card"></div>
+    <div>
+        <div className='react-activity-calendar'>
+            <GitHubCalendar
+                username={"pw11-085"}
+                transformData={selectLastHalfYear}
+                hideColorLegend
+                hideTotalCount
+                fontSize={16}
+            />
+        </div>
+        <div  id="github-streak-stats"></div>
+        <div  id="github-top-langs"></div>
+        <div  id="github-stats-card"></div>
     </div>
   )
 }

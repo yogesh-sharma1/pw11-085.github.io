@@ -2,10 +2,10 @@ import React from "react";
 
 const Contact = () => {
   const contact_info = [
-    { logo: "mail", text: "yogi.krsh22@gmail.com", link: "", class: "contact-email" },
-    { logo: "logo-whatsapp", text: "7073062600", link: "", class: "contact-phone" },
-    { logo: "logo-github", text: "Github", link: "", class: "contact-github" },
-    { logo: "logo-linkedin", text: "LinkedIn", link: "", class: "contact-linkedin" }
+    { logo: "mail", text: "yogi.krsh22@gmail.com", link: "", id: "contact-email" },
+    { logo: "logo-whatsapp", text: "7073062600", link: "", id: "contact-phone" },
+    { logo: "logo-github", text: "Github", link: "", id: "contact-github" },
+    { logo: "logo-linkedin", text: "LinkedIn", link: "", id: "contact-linkedin" }
   ];
   return (
     <section id="contact" className="py-10 px-3 text-white">
@@ -32,7 +32,7 @@ const Contact = () => {
                 className="flex flex-row  
                   text-left gap-4 flex-wrap items-center"
               >
-                <div className={`${contact.class} min-w-[3.5rem]  text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full`}>
+                <div id={contact.id} className={`min-w-[3.5rem]  text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full`}>
                   <ion-icon name={contact.logo}></ion-icon>
                 </div>
                 <p className="md:text-base text-sm  break-words">
