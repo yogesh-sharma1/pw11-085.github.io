@@ -1,7 +1,7 @@
-// import hireMe from "../assets/images/hireMe.png";
+import hireMe from "../images/hireMe.png";
 const Hireme = () => {
   return (
-    <section id="hireme" className="py-10 px-3 text-white">
+    <section id="resume" className="py-10 px-3 text-white">
       <div className="text-center">
         <h3 className="text-4xl font-semibold">
           Hire <span className="text-cyan-600">Me</span>
@@ -19,11 +19,13 @@ const Hireme = () => {
             sapiente obcaecati odio deleniti architecto corporis ratione.
             Consequatur a quidem maiores!
           </p>
-          <button className="btn-primary mt-10">Say Hello</button>
+          <a href="/myportfolio/src/images/resume.pdf" target={"_blank"} download >
+            <button id="resume-button-1" className="btn-primary mt-10">View Resume</button>
+          </a>
         </div>
         <img
-          src={"hireMe"}
-          alt=""
+          src={hireMe}
+          alt="Hire Me"
           className="lg:h-[32rem] h-80 lg:absolute bottom-0 -right-3 object-cover"
         />
       </div>

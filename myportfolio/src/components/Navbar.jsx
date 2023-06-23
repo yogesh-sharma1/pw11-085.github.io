@@ -38,7 +38,7 @@ const Navbar = () => {
               </li>
             ))}
             <li className="nav-link resume px-6 hover:text-cyan-600">
-              <a href="#contact">RESUME</a>
+              <a href="#resume">RESUME</a>
             </li>
           </ul>
         </div>
