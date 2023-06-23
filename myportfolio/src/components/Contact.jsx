@@ -32,7 +32,7 @@ const Contact = () => {
                 className="flex flex-row  
                   text-left gap-4 flex-wrap items-center"
               >
-                <div className={contact.class+" min-w-[3.5rem]  text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full"}>
+                <div className={`${contact.class} min-w-[3.5rem]  text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full`}>
                   <ion-icon name={contact.logo}></ion-icon>
                 </div>
                 <p className="md:text-base text-sm  break-words">
