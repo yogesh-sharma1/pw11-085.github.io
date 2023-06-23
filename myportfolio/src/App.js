@@ -1,13 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Hireme from "./components/Hireme";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Bot from "./components/Bot";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Yogesh Sharma</h1>
-      <h1>Sahil Shahu</h1>
+    <div>
+      <Navbar />
+      <Bot />
+      <Home />
+      <About />
+      <Skills />
+      <Hireme />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
