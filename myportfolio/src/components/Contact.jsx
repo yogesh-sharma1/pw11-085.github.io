@@ -2,10 +2,10 @@ import React from "react";
 
 const Contact = () => {
   const contact_info = [
-    { logo: "mail", text: "yogi.krsh22@gmail.com", link: "", id: "contact-email" },
-    { logo: "logo-whatsapp", text: "7073062600", link: "", id: "contact-phone" },
-    { logo: "logo-github", text: "Github", link: "", id: "contact-github" },
-    { logo: "logo-linkedin", text: "LinkedIn", link: "", id: "contact-linkedin" }
+    { logo: "mail", text: "yogi.krsh22@gmail.com", link: "mailto: yogi.krsh22@gmail.com", id: "contact-email" },
+    { logo: "logo-whatsapp", text: "7073062600", link: "tel: +917073062600", id: "contact-phone" },
+    { logo: "logo-github", text: "Github", link: "https://github.com/pw11-085", id: "contact-github" },
+    { logo: "logo-linkedin", text: "LinkedIn", link: "https://www.linkedin.com/in/yogesh-sharma-262115219/", id: "contact-linkedin" }
   ];
   return (
     <section id="contact" className="py-10 px-3 text-white">
@@ -32,11 +32,11 @@ const Contact = () => {
                 className="flex flex-row  
                   text-left gap-4 flex-wrap items-center"
               >
-                <div id={contact.id} className={`min-w-[3.5rem]  text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full`}>
+                <div className={`min-w-[3.5rem]  text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full`}>
                   <ion-icon name={contact.logo}></ion-icon>
                 </div>
                 <p id={contact.id} className="md:text-base text-sm  break-words">
-                  {contact.text}
+                  <a href={contact.link} target={"_blank"} rel="noreferrer">{contact.text}</a>
                 </p>
               </div>
             ))}

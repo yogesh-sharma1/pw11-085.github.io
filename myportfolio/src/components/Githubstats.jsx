@@ -11,14 +11,7 @@ const Githubstats = () => {
         <p className="text-gray-400 mt-3 text-lg">My Contributions and Stats</p>
       </div>
 
-      <div className="flex justify-center mt-12"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          // marginTop: "3rem",
-        }}
-      >
+      <div className="flex justify-center items-center mt-12">
         <GitHubCalendar
           fontSize={16}
           blockSize={15}
