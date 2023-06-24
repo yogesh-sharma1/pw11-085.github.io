@@ -1,39 +1,62 @@
-import React from 'react'
-import GitHubCalendar from "react-github-calender"
+import React from "react";
+import GitHubCalendar from "react-github-calendar";
 
-const selectLastHalfYear = contributions => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const shownMonths = 6;
-  
-    return contributions.filter(activity => {
-      const date = new Date(activity.date);
-      const monthOfDay = date.getMonth();
-  
-      return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
-        monthOfDay <= currentMonth
-      );
-    });
-  };
 const Githubstats = () => {
   return (
-    <div>
-        <div className='react-activity-calendar'>
-            <GitHubCalendar
-                username={"pw11-085"}
-                transformData={selectLastHalfYear}
-                hideColorLegend
-                hideTotalCount
-                fontSize={16}
-            />
-        </div>
-        <div  id="github-streak-stats"></div>
-        <div  id="github-top-langs"></div>
-        <div  id="github-stats-card"></div>
-    </div>
-  )
-}
+    <section className="mt-5 github-calendar">
+      <div className="text-center">
+        <h3 className="text-4xl font-semibold">
+          Github <span className="text-cyan-600">Stats</span>
+        </h3>
+        <p className="text-gray-400 mt-3 text-lg">My Contributions and Stats</p>
+      </div>
 
-export default Githubstats
+      <div className="flex justify-center mt-12"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          // marginTop: "3rem",
+        }}
+      >
+        <GitHubCalendar
+          fontSize={16}
+          blockSize={15}
+          year={2023}
+          username="pw11-085"
+        />
+      </div>
+      <div className="flex justify-center items-center mt-3 gap-10 flex-wrap"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          // marginTop: "3rem",
+        }}
+      >
+        <img
+          id="github-top-langs"
+          align="center"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=pw11-085&theme=neon&border_radius=2.7"
+          alt="pw11-085"
+        />
+      </div>
+      <div id="github-stat" className="flex justify-center mt-3 gap-10 flex-wrap">
+        <img
+          id="github-stats-card"
+          align="center"
+          src="https://github-readme-stats.vercel.app/api?username=pw11-085&theme=neon&border_radius=2.7&show_icons=true"
+          alt="pw11-085"
+        />
+        <img
+          id="github-streak-stats"
+          align="center"
+          src="https://github-readme-streak-stats.herokuapp.com/?user=pw11-085&theme=neon&border_radius=2.7&date_format=M%20j%5B%2C%20Y%5D"
+          alt="pw11-085"
+        />
+      </div>
+    </section>
+  );
+};
+
+export default Githubstats;

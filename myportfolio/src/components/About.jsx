@@ -15,12 +15,9 @@ const About = () => {
         <p className="text-gray-400 my-3 text-lg">My introduction</p>
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="p-2">
-            <div id="user-detail-intro" className="text-gray-300 my-3">
-              <p className="text-justify leading-7 w-11/12 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                eos, quam vel quisquam, explicabo sit labore dignissimos optio
-                ratione quibusdam doloribus pariatur consequuntur sint.
-                Reprehenderit cupiditate possimus facere quasi voluptatem?
+            <div className="text-gray-300 my-3">
+              <p id="user-detail-intro" className="text-justify leading-7 w-11/12 mx-auto">
+              Passionate MERN Stack Developer. Have Experience of 1 year in web development. Worked on various modern technologies such as MongoDB, Express.js, React, and Node.js. Skilled in frontend and backend development, creating robust and scalable web applications. Committed to delivering exceptional user experiences through innovative solutions. Seeking new opportunities to contribute and enhance skills.
               </p>
               <div className="flex mt-10 items-center gap-7">
                 {info.map((content) => (

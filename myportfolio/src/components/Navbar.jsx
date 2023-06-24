@@ -38,13 +38,13 @@ const Navbar = () => {
               </li>
             ))}
             <li className="nav-link resume px-6 hover:text-cyan-600">
-              <a href="#resume">RESUME</a>
+              <a href="#resume"><button>RESUME</button></a>
             </li>
           </ul>
         </div>
         <div
           onClick={() => setOpen(!open)}
-          className={`z-[999]  ${open ? "text-gray-900" : "text-gray-100"
+          className={`z-[999]  ${open ? "text-gray-900" : "text-gray-500"
             } text-3xl md:hidden m-5`}
         >
           <ion-icon name="menu"></ion-icon>
@@ -64,6 +64,9 @@ const Navbar = () => {
                 <a href={menu?.link}>{menu?.name}</a>
               </li>
             ))}
+            <li className="nav-link resume px-6 hover:text-cyan-600">
+              <a href="#resume"><button id="resume-button-1">RESUME</button></a>
+            </li>
           </ul>
         </div>
       </div>

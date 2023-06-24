@@ -14,10 +14,8 @@ const Hireme = () => {
             Do you want any work from me?
           </h2>
           <p className="lg:text-left text-justify max-w-lg text-sm mt-4 text-gray-200 leading-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta
-            soluta quos tempore eos accusamus cupiditate, amet in similique
-            sapiente obcaecati odio deleniti architecto corporis ratione.
-            Consequatur a quidem maiores!
+          Working Professional Having Experience of more than a year in web development.
+          Worken on various high qualty projects that helps the customes/users grow more faster. Worked on various modern technologies such as MongoDB, Express.js, React, and Node.js. Skilled in frontend and backend development, creating robust and scalable web applications.
           </p>
           <a href="/myportfolio/src/images/resume.pdf" target={"_blank"} download >
             <button id="resume-button-1" className="btn-primary mt-10">View Resume</button>
