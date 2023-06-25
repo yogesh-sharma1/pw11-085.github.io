@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import MyPdf from  "../images/Yogesh-Sharma-Resume.pdf";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -10,6 +11,16 @@ const Navbar = () => {
     { name: "PROJECTS", link: "#projects", class: "nav-link projects" },
     { name: "CONTACT", link: "#contact", class: "nav-link contact" }
   ];
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.download = 'Yogesh-Sharma-Resume.pdf';
+    link.href = "http://localhost:3000/Yogesh-Sharma-Resume.pdf";
+    document.body.appendChild(link)
+    link.click();
+    link.remove();
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       window.scrollY > 0 ? setSticky(true) : setSticky(false);
@@ -38,7 +49,9 @@ const Navbar = () => {
               </li>
             ))}
             <li className="nav-link resume px-6 hover:text-cyan-600">
-              <a href="#resume"><button>RESUME</button></a>
+              <a href={MyPdf} target={"_blank"} rel="noreferrer">
+                <button id="resume-button-1" onClick={handleDownload}>RESUME</button>
+              </a>
             </li>
           </ul>
         </div>

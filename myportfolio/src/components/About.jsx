@@ -1,11 +1,24 @@
 import React from "react";
 import aboutImg from "../images/hireMe.png";
+import MyPdf from  "../images/resume.pdf"
+
 const About = () => {
   const info = [
     { text: "Years experience", count: "01" },
     { text: "Completed Projects", count: "5" },
     { text: "Companies Work", count: "01" },
   ];
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.download = 'Yogesh-Sharma-Resume.pdf';
+    link.href = "http://localhost:3000/Yogesh-Sharma-Resume.pdf";
+    document.body.appendChild(link)
+    link.click();
+    link.remove();
+  };
+
+
   return (
     <section id="about" className="about section py-10 text-white">
       <div className="text-center mt-8">
@@ -32,8 +45,8 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="./src/images/resume.pdf" target={"_blank"} >
-                <button id="resume-button-2" className="btn-primary">Download CV</button>
+              <a href={MyPdf} target={"_blank"} rel="noreferrer" >
+                <button id="resume-button-2" onClick={handleDownload} className="btn-primary">Download CV</button>
               </a>
             </div>
           </div>
@@ -41,7 +54,7 @@ const About = () => {
             <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg ">
               <img
                 src={aboutImg}
-                alt=""
+                alt="AboutImage"
                 className="w-full object-cover bg-cyan-600 rounded-xl"
               />
             </div>
