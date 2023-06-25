@@ -1,6 +1,6 @@
 import React from "react";
 import aboutImg from "../images/hireMe.png";
-import MyPdf from  "../images/resume.pdf"
+import MyPdf from  "../images/pooja-resume.pdf"
 
 const About = () => {
   const info = [
@@ -12,7 +12,7 @@ const About = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.download = 'Yogesh-Sharma-Resume.pdf';
-    link.href = "http://localhost:3000/Yogesh-Sharma-Resume.pdf";
+    link.href = "http://localhost:3000/pooja-resume.pdf";
     document.body.appendChild(link)
     link.click();
     link.remove();

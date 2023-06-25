@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import MyPdf from  "../images/Yogesh-Sharma-Resume.pdf";
+import { saveAs } from 'file-saver';
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -12,14 +12,37 @@ const Navbar = () => {
     { name: "CONTACT", link: "#contact", class: "nav-link contact" }
   ];
 
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.download = 'Yogesh-Sharma-Resume.pdf';
-    link.href = "http://localhost:3000/Yogesh-Sharma-Resume.pdf";
-    document.body.appendChild(link)
-    link.click();
-    link.remove();
-  };
+
+  function handleDownload() {
+    const fileUrl = 'http://localhost:3000/pooja-resume.pdf';
+    
+    window.open(fileUrl, '_blank');
+    fetch(fileUrl)
+      .then((response) => {
+        if (response.ok) {
+          return response.blob();
+        }
+        throw new Error('Network response was not ok.');
+      })
+      .then((blob) => {
+        saveAs(blob, 'yogesh123.pdf'); // Replace with your desired file name and extension
+      })
+      .catch((error) => {
+        console.error('Error downloading the file:', error);
+      });
+
+  }
+  
+
+
+  // const handleDownload = () => {
+  //   const link = document.createElement('a');
+  //   link.download = 'Yogesh-Sharma-Resume.pdf';
+  //   link.href = "http://localhost:3000/pooja-resume.pdf";
+  //   document.body.appendChild(link)
+  //   link.click();
+  //   window.open("http://localhost:3000/pooja-resume.pdf", '_blank');
+  // };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -49,9 +72,8 @@ const Navbar = () => {
               </li>
             ))}
             <li className="nav-link resume px-6 hover:text-cyan-600">
-              <a href={MyPdf} target={"_blank"} rel="noreferrer">
-                <button id="resume-button-1" onClick={handleDownload}>RESUME</button>
-              </a>
+              <button onClick={handleDownload}>RESUME</button>
+              {/* <button id="resume-button-1" onClick={handleDownload}>RESUME</button> */}
             </li>
           </ul>
         </div>
@@ -77,9 +99,9 @@ const Navbar = () => {
                 <a href={menu?.link}>{menu?.name}</a>
               </li>
             ))}
-            <li className="nav-link resume px-6 hover:text-cyan-600">
-              <a href="#resume"><button id="resume-button-1">RESUME</button></a>
-            </li>
+            {/* <li className="nav-link resume px-6 hover:text-cyan-600">
+              <a href={}><button id="resume-button-1">RESUME</button></a>
+            </li> */}
           </ul>
         </div>
       </div>
