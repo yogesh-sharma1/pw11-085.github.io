@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9f8e0c94.css",
-    "main.js": "/static/js/main.c3750c16.js",
+    "main.js": "/static/js/main.2347ca4c.js",
     "static/media/project_person1.png": "/static/media/project_person1.71c87abb0c1a044e2943.png",
     "static/media/project-1.png": "/static/media/project-1.c4715e3d3aa4a03c3f12.png",
     "static/media/hero.png": "/static/media/hero.917a084236c6cbcdd886.png",
@@ -10,11 +10,13 @@
     "static/media/project-3.jpg": "/static/media/project-3.93e95134dbf6d611eb62.jpg",
     "static/media/project-2.jpg": "/static/media/project-2.6b2b81b9ad4cd559dbae.jpg",
     "index.html": "/index.html",
+    "static/media/Yogesh-Sharma-Resume.pdf": "/static/media/Yogesh-Sharma-Resume.2a150b3cb9168f86749b.pdf",
+    "static/media/resume.pdf": "/static/media/resume.2a150b3cb9168f86749b.pdf",
     "main.9f8e0c94.css.map": "/static/css/main.9f8e0c94.css.map",
-    "main.c3750c16.js.map": "/static/js/main.c3750c16.js.map"
+    "main.2347ca4c.js.map": "/static/js/main.2347ca4c.js.map"
   },
   "entrypoints": [
     "static/css/main.9f8e0c94.css",
-    "static/js/main.c3750c16.js"
+    "static/js/main.2347ca4c.js"
   ]
 }
