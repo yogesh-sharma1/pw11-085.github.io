@@ -77,7 +77,7 @@ const Navbar = () => {
                 rel="noreferrer"
                 class="nav-link resume"
                 onClick={handleDownload} 
-                download={'Yogesh-Sharma-Resume'}
+                download={'Yogesh-Sharma-Resume.pdf'}
                 href={"https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing"}
               >
                 <button id="resume-button-1">

@@ -17,7 +17,7 @@ const Hireme = () => {
           Working Professional Having Experience of more than a year in web development.
           Worken on various high qualty projects that helps the customes/users grow more faster. Worked on various modern technologies such as MongoDB, Express.js, React, and Node.js. Skilled in frontend and backend development, creating robust and scalable web applications.
           </p>
-          <a href="/myportfolio/src/images/resume.pdf" target={"_blank"} download >
+          <a href={"https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing"} target={"_blank"} download rel="noreferrer" >
             <button id="resume-button-1" className="btn-primary mt-10">View Resume</button>
           </a>
         </div>
