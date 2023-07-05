@@ -16,7 +16,7 @@ const About = () => {
     // document.body.appendChild(link)
     // link.click();
     // link.remove();C:\Users\PAVILION\Desktop\GithubPortFolio\pw11-085.github.io\myportfolio\src\images\Yogesh-Sharma-Resume.pdf
-    return window.open("myportfolio/src/images/Yogesh-Sharma-Resume.pdf");
+    return window.open("https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing");
   };
 
 
@@ -54,7 +54,7 @@ const About = () => {
                 download={'Yogesh-Sharma-Resume'}
                 href={"https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing"}
               >
-                <button id="resume-button-1">
+                <button id="resume-button-2">
                   Resume
                 </button>
               </Link>

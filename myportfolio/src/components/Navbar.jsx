@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { saveAs } from 'file-saver';
+// import { saveAs } from 'file-saver';
 import { Link } from "react-router-dom"
 
 const Navbar = () => {
@@ -41,7 +41,7 @@ const Navbar = () => {
   //   link.href = "https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing";
   //   document.body.appendChild(link)
   //   link.click();
-    return window.open("../images/Yogesh-Sharma-Resume.pdf");
+    return window.open("https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing");
   };
 
   useEffect(() => {
