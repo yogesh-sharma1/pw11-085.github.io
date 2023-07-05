@@ -1,6 +1,6 @@
 import React from "react";
 import aboutImg from "../images/hireMe.png";
-import MyPdf from  "../images/pooja-resume.pdf"
+import { Link } from  "react-router-dom"
 
 const About = () => {
   const info = [
@@ -10,12 +10,13 @@ const About = () => {
   ];
 
   const handleDownload = () => {
-    const link = document.createElement('a');
-    link.download = 'Yogesh-Sharma-Resume.pdf';
-    link.href = "http://localhost:3000/pooja-resume.pdf";
-    document.body.appendChild(link)
-    link.click();
-    link.remove();
+    // const link = document.createElement('a');
+    // link.download = 'Yogesh-Sharma-Resume.pdf';
+    // link.href = "https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing";
+    // document.body.appendChild(link)
+    // link.click();
+    // link.remove();C:\Users\PAVILION\Desktop\GithubPortFolio\pw11-085.github.io\myportfolio\src\images\Yogesh-Sharma-Resume.pdf
+    return window.open("myportfolio/src/images/Yogesh-Sharma-Resume.pdf");
   };
 
 
@@ -45,9 +46,18 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href={MyPdf} target={"_blank"} rel="noreferrer" >
-                <button id="resume-button-2" onClick={handleDownload} className="btn-primary">Download CV</button>
-              </a>
+              <Link id="resume-link-1" 
+                target="_blank"
+                rel="noreferrer"
+                class="nav-link resume"
+                onClick={handleDownload} 
+                download={'Yogesh-Sharma-Resume'}
+                href={"https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing"}
+              >
+                <button id="resume-button-1">
+                  Resume
+                </button>
+              </Link>
             </div>
           </div>
           <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">

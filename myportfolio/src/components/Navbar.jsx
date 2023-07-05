@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { saveAs } from 'file-saver';
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -13,36 +14,35 @@ const Navbar = () => {
   ];
 
 
-  function handleDownload() {
-    const fileUrl = 'http://localhost:3000/pooja-resume.pdf';
+  // function handleDownload() {
+  //   const fileUrl = 'https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing';
     
-    window.open(fileUrl, '_blank');
-    fetch(fileUrl)
-      .then((response) => {
-        if (response.ok) {
-          return response.blob();
-        }
-        throw new Error('Network response was not ok.');
-      })
-      .then((blob) => {
-        saveAs(blob, 'yogesh123.pdf'); // Replace with your desired file name and extension
-      })
-      .catch((error) => {
-        console.error('Error downloading the file:', error);
-      });
-
-  }
+  //   window.open(fileUrl, '_blank');
+  //   fetch(fileUrl)
+  //     .then((response) => {
+  //       if (response.ok) {
+  //         return response.blob();
+  //       }
+  //       throw new Error('Network response was not ok.');
+  //     })
+  //     .then((blob) => {
+  //       saveAs(blob, 'Yogesh-Sharma-Resume.pdf'); 
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error downloading the file:', error);
+  //     });
+  // }
   
 
 
-  // const handleDownload = () => {
+  const handleDownload = () => {
   //   const link = document.createElement('a');
   //   link.download = 'Yogesh-Sharma-Resume.pdf';
-  //   link.href = "http://localhost:3000/pooja-resume.pdf";
+  //   link.href = "https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing";
   //   document.body.appendChild(link)
   //   link.click();
-  //   window.open("http://localhost:3000/pooja-resume.pdf", '_blank');
-  // };
+    return window.open("../images/Yogesh-Sharma-Resume.pdf");
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -72,8 +72,18 @@ const Navbar = () => {
               </li>
             ))}
             <li className="nav-link resume px-6 hover:text-cyan-600">
-              <button onClick={handleDownload}>RESUME</button>
-              {/* <button id="resume-button-1" onClick={handleDownload}>RESUME</button> */}
+              <Link id="resume-link-1" 
+                target="_blank"
+                rel="noreferrer"
+                class="nav-link resume"
+                onClick={handleDownload} 
+                download={'Yogesh-Sharma-Resume'}
+                href={"https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing"}
+              >
+                <button id="resume-button-1">
+                  RESUME
+                </button>
+              </Link>
             </li>
           </ul>
         </div>
