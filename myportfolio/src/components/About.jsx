@@ -16,7 +16,7 @@ const About = () => {
     // document.body.appendChild(link)
     // link.click();
     // link.remove();C:\Users\PAVILION\Desktop\GithubPortFolio\pw11-085.github.io\myportfolio\src\images\Yogesh-Sharma-Resume.pdf
-    return window.open("https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing");
+    return window.open("https://drive.google.com/file/d/1Hwls7Qzbw6Db9mI3pNdBB5DObaZpE4Mg/view?usp=sharing");
   };
 
 
@@ -52,7 +52,7 @@ const About = () => {
                 class="nav-link resume"
                 onClick={handleDownload} 
                 download={'Yogesh-Sharma-Resume.pdf'}
-                href={"https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing"}
+                href={"https://drive.google.com/file/d/1Hwls7Qzbw6Db9mI3pNdBB5DObaZpE4Mg/view?usp=sharing"}
               >
                 <button className="btn-primary mt-10" id="resume-button-2">
                   Resume

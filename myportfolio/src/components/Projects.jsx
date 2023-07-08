@@ -1,9 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../images/project-1.png";
-import project2 from "../images/project-2.jpg";
+import project2 from "../images/project-2.png";
 import project3 from "../images/project-3.jpg";
-import project4 from "../images/project-5.png";
 import project_person from "../images/project_person1.png";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,27 +12,27 @@ const Projects = () => {
   const projects = [
     {
       img: project1,
-      name: "Movie App",
-      github_link: "https://github.com/ShubhamRaut187/Hilling_Travel_Agency",
-      live_link: "https://luminous-halva-f8c219.netlify.app/",
+      name: "Big Basket",
+      github_link: "https://github.com/pw11-085/imperial-web11",
+      live_link: "jocular-unicorn-7cb959.netlify.app",
     },
     {
       img: project2,
-      name: "Job search Web App",
+      name: "Trivago",
+      github_link: "https://github.com/Mahima29Jaiswal/TrivagoProject",
+      live_link: "https://luminous-halva-f8c219.netlify.app",
+    },
+    {
+      img: project3,
+      name: "Hilling Tour",
       github_link: "https://github.com/ShubhamRaut187/Hilling_Travel_Agency",
       live_link: "https://luminous-halva-f8c219.netlify.app/",
     },
     {
       img: project3,
-      name: "Highking",
-      github_link: "https://github.com/ShubhamRaut187/Hilling_Travel_Agency",
-      live_link: "https://luminous-halva-f8c219.netlify.app/",
-    },
-    {
-      img: project4,
-      name: "Vue Country",
-      github_link: "https://github.com/ShubhamRaut187/Hilling_Travel_Agency",
-      live_link: "https://luminous-halva-f8c219.netlify.app/",
+      name: "Go Social",
+      github_link: "https://github.com/pw11-085/go-social-frontend",
+      live_link: "https://github.com/pw11-085/social-media-project",
     },
   ];
   return (

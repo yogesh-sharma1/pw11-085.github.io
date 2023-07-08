@@ -36,12 +36,7 @@ const Navbar = () => {
 
 
   const handleDownload = () => {
-  //   const link = document.createElement('a');
-  //   link.download = 'Yogesh-Sharma-Resume.pdf';
-  //   link.href = "https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing";
-  //   document.body.appendChild(link)
-  //   link.click();
-    return window.open("https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing");
+    return window.open("https://drive.google.com/file/d/1Hwls7Qzbw6Db9mI3pNdBB5DObaZpE4Mg/view?usp=sharing");
   };
 
   useEffect(() => {
@@ -78,7 +73,7 @@ const Navbar = () => {
                 class="nav-link resume"
                 onClick={handleDownload} 
                 download={'Yogesh-Sharma-Resume.pdf'}
-                href={"https://drive.google.com/file/d/15kvLSxLx1J8EfS-XprMHQhgIowd-TABQ/view?usp=sharing"}
+                href={"https://drive.google.com/file/d/1Hwls7Qzbw6Db9mI3pNdBB5DObaZpE4Mg/view?usp=sharing"}
               >
                 <button id="resume-button-1">
                   RESUME
@@ -109,9 +104,6 @@ const Navbar = () => {
                 <a href={menu?.link}>{menu?.name}</a>
               </li>
             ))}
-            {/* <li className="nav-link resume px-6 hover:text-cyan-600">
-              <a href={}><button id="resume-button-1">RESUME</button></a>
-            </li> */}
           </ul>
         </div>
       </div>
