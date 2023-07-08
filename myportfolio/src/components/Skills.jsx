@@ -10,7 +10,7 @@ const Skills = () => {
     {
       logo: "logo-css3",
       name: "CSS3",
-      count: 80,
+      count: 71,
     },
     {
       logo: "logo-nodejs",
@@ -21,6 +21,26 @@ const Skills = () => {
       logo: "logo-react",
       name: "React.js",
       count: 82,
+    },
+    {
+      logo: "logo-javascript",
+      name: "Express.js",
+      count: 82,
+    },
+    {
+      logo: "leaf",
+      name: "MongoDB",
+      count: 70,
+    },
+    {
+      logo: "logo-github",
+      name: "Github",
+      count: 76,
+    },
+    {
+      logo: "cafe",
+      name: "Java",
+      count: 80,
     },
   ];
   return (
@@ -40,7 +60,7 @@ const Skills = () => {
                 style={{
                   background: `conic-gradient(rgb(8,145,170) ${skill.count}%,#ddd ${skill.count}%)`,
                 }}
-                className="w-32 h-32 flex items-center justify-center rounded-full"
+                className="w-32 h-32 flex items-center justify-center wrap rounded-full"
               >
                 <div className="skills-card-img text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
                   <ion-icon name={skill.logo}></ion-icon>
