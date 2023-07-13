@@ -19,11 +19,13 @@ const Contact = () => {
           className="mt-16 flex md:flex-row flex-col
          gap-6 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto"
         >
-          <form className="flex flex-col flex-1 gap-5">
-            <input type="text" placeholder="Your Name" />
-            <input type="Email" placeholder="Your Email Address" />
-            <textarea placeholder="Your Message" rows={10}></textarea>
-            <button className="btn-primary w-fit">Send Message</button>
+          <form action="https://formsubmit.co/8417cd5b16aac83b53f3f532c4a005de" method="POST" className="flex flex-col flex-1 gap-5">
+            <input type="text" required name="name" placeholder="Your Name" />
+            <input type="email" required name="email" placeholder="Your Email Address" />
+            <input type="text" required name="subject" placeholder="Subject" />
+            <textarea name="message" required placeholder="Your Message" rows={10}></textarea>
+            <input type="hidden" name="_captcha" value={false} />
+            <button type="submit" className="btn-primary w-fit">Send Message</button>
           </form>
           <div className="flex flex-col  gap-7 ">
             {contact_info.map((contact, i) => (

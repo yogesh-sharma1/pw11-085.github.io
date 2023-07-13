@@ -3,10 +3,9 @@ import Typewriter from "typewriter-effect";
 import hero from "../images/Yogesh-Sharma-Profile.jpeg";
 const Home = () => {
   const social_media = [
-    "logo-github",
-    "logo-facebook",
-    "logo-linkedin",
-    "logo-twitter",
+    { logo:"logo-github", link: "https://github.com/pw11-085" },
+    { logo:"logo-linkedin", link: "https://www.linkedin.com/in/yogesh-sharma-262115219/" },
+    { logo:"globe", link: "https://pw11-085.github.io" },
   ];
   return (
     <section
@@ -55,7 +54,9 @@ const Home = () => {
                 key={icon}
                 className="text-gray-600 hover:text-white cursor-pointer "
               >
-                <ion-icon name={icon}></ion-icon>
+                <a href={icon.link}>
+                  <ion-icon name={icon.logo} ></ion-icon>
+                </a>
               </div>
             ))}
           </div>
