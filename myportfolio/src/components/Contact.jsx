@@ -19,11 +19,11 @@ const Contact = () => {
           className="mt-16 flex md:flex-row flex-col
          gap-6 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto"
         >
-          <form action="https://formsubmit.co/8417cd5b16aac83b53f3f532c4a005de" method="POST" className="flex flex-col flex-1 gap-5">
+          <form action="https://formsubmit.co/yogi.krsh22@gmail.com" method="POST" className="flex flex-col flex-1 gap-5">
             <input type="text" required name="name" placeholder="Your Name" />
             <input type="email" required name="email" placeholder="Your Email Address" />
             <input type="text" required name="subject" placeholder="Subject" />
-            <textarea name="message" required placeholder="Your Message" rows={10}></textarea>
+            <textarea name="message" required placeholder="Your Message" rows={6}></textarea>
             <input type="hidden" name="_captcha" value={false} />
             <button type="submit" className="btn-primary w-fit">Send Message</button>
           </form>
