@@ -54,7 +54,7 @@ const Home = () => {
                 key={icon}
                 className="text-gray-600 hover:text-white cursor-pointer "
               >
-                <a href={icon.link}>
+                <a href={icon.link} target="_blank" rel="noreferrer">
                   <ion-icon name={icon.logo} ></ion-icon>
                 </a>
               </div>
