@@ -4,8 +4,7 @@ import hero from "../images/Yogesh-Sharma-Profile.jpeg";
 const Home = () => {
   const social_media = [
     { logo:"logo-github", link: "https://github.com/pw11-085" },
-    { logo:"logo-linkedin", link: "https://www.linkedin.com/in/yogesh-sharma-262115219/" },
-    { logo:"globe", link: "https://pw11-085.github.io" },
+    { logo:"logo-linkedin", link: "https://www.linkedin.com/in/yogesh-sharma-262115219/" }
   ];
   return (
     <section
